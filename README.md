@@ -1,5 +1,6 @@
 # 重点人员综合管控数据大屏
-![Uploading image.png…]()
+<img width="1276" height="698" alt="Snipaste_2026-08-20_14-32-44" src="https://github.com/user-attachments/assets/6ebbb8da-98c8-40f0-af5a-366a395380e1" />
+
 
 
 ## ⚠️ 数据声明（务必阅读）
