@@ -1,0 +1,18 @@
+# 依赖与运行环境
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+
+# 构建产物
+frontend/dist/
+
+# 本地数据（含数据库、照片、MySQL 配置——含敏感信息，严禁上传）
+backend/data/
+
+# 编辑器/系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
