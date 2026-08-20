@@ -1,5 +1,5 @@
 # 重点人员综合管控数据大屏
-<img width="2521" height="1394" alt="image" src="https://github.com/user-attachments/assets/3a80af8e-097e-4b4c-9c3d-9dc406f5dfaa" />
+![Uploading image.png…]()
 
 ## ⚠️ 数据声明（务必阅读）
 
