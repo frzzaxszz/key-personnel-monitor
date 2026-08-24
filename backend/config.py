@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""数据库连接配置：默认 SQLite，可切换 MySQL（持久化到 data/db_config.json，重启后保持）"""
+"""数据库连接配置：默认 MySQL（持久化到 data/db_config.json，重启后保持），连接失败时回退 SQLite"""
 import json
 import os
 

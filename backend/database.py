@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""SQLAlchemy 引擎与会话管理，支持运行时切换 MySQL/SQLite"""
+"""SQLAlchemy 引擎与会话管理，支持运行时切换 MySQL/SQLite（默认 MySQL）"""
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 

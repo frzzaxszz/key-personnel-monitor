@@ -6,8 +6,8 @@ echo ============================================
 echo.
 
 REM 启动后端
-echo [1/2] 正在启动后端服务 (http://127.0.0.1:8000) ...
-start "后端服务" cmd /k "cd /d %~dp0backend && .venv\Scripts\python.exe -m uvicorn main:app --host 127.0.0.1 --port 8000"
+echo [1/2] 正在启动后端服务 (http://127.0.0.1:5174) ...
+start "后端服务" cmd /k "cd /d %~dp0backend && .venv\Scripts\python.exe -m uvicorn main:app --host 127.0.0.1 --port 5174"
 
 timeout /t 2 /nobreak >nul
 
