@@ -5,6 +5,11 @@ echo    重点人员综合管控平台 - 启动脚本
 echo ============================================
 echo.
 
+REM ---------- [前置检查] 先释放 5173/5174 已占用端口，避免冲突 ----------
+echo 正在检查端口占用（5173/5174），如有残留进程将自动结束...
+powershell -NoProfile -Command "$ports=5174,5173; foreach($p in $ports){ $c=Get-NetTCPConnection -LocalPort $p -State Listen -ErrorAction SilentlyContinue; if($c){ $ids=@($c | Select-Object -ExpandProperty OwningProcess -Unique); foreach($id in $ids){ Stop-Process -Id $id -Force -ErrorAction SilentlyContinue }; Write-Host ('   释放端口 '+$p+'：结束进程 '+($ids -join ',')) } }"
+echo.
+
 REM ---------- 启动后端 (5174) ----------
 echo [1/2] 正在启动后端服务 (http://127.0.0.1:5174) ...
 start "后端服务" cmd /k "cd /d %~dp0backend && .venv\Scripts\python.exe -m uvicorn main:app --host 127.0.0.1 --port 5174"
